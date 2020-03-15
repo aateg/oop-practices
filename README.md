@@ -1,2 +1,3 @@
 # oop-practices
-Practices in Object Oriented Programming at the classes PCS3111 in University of São Paulo 
+
+Practices in Object Oriented Programming in the PCS3111 classes at the University of São Paulo
