@@ -20,11 +20,3 @@ void Student::getInfo(){
     cout << this->name << endl;
     cout << this->uspNumber << endl;
 }
-
-int main(){
-    Student *aateg = new Student(); 
-    string name = "Guilherme";
-    int number = 10297272;
-    aateg->setInfo(name, number);
-    aateg->getInfo();
-}
