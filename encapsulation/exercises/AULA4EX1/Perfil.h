@@ -1,6 +1,9 @@
 #ifndef PERFIL_H
 #define PERFIL_H
 
+#include <string>
+using namespace std;
+
 #define MAXIMO_PUBLICACOES 20
 #define MAXIMO_SEGUIDORES 20
 

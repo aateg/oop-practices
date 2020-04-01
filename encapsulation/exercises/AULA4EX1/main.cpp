@@ -22,7 +22,7 @@ int main(){
   alberto->publicar("Mensagem 1 (AC)");
 
   // 6. carlos publica
-  carlos->publicar("Mensagem2 (CE)");
+  carlos->publicar("Mensagem 2 (CE)");
 
   // IMPRIME
 
@@ -30,11 +30,3 @@ int main(){
   alberto->imprimir();
   bernarda->imprimir();
 }
-/*
-void imprimirRede (Perfil* p1, Perfil* p2) {
-  cout << endl << " ------------------------------ ";
-  p1->imprimir();
-  cout << " ------------------------------ ";
-  p2->imprimir();
-  cout << " ------------------------------ " << endl << endl;
- }*/

@@ -1,6 +1,5 @@
 #include "Perfil.h"
 #include <iostream>
-
 using namespace std;
 
 void Perfil::setNome(string nome) {
@@ -44,10 +43,10 @@ bool Perfil::receber(string texto){
 }
 
 void Perfil::imprimir() {
-	cout << endl << "Seguidores: " << nome << endl;
+    cout << "PERFIL: " << nome << endl;
     if (quantidadeDeSeguidores > 0){
         for (int i = 0; i < quantidadeDeSeguidores; i++){
-            cout << "Seguidor "<< seguidores[i]->getNome() << endl;
+            cout << "Seguidor: "<< seguidores[i]->getNome() << endl;
         }
     } else {
         cout << "Sem seguidor " << endl;
