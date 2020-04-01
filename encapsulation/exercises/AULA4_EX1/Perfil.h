@@ -1,7 +1,9 @@
+#ifndef PERFIL_H
+#define PERFIL_H
+
 #define MAXIMO_PUBLICACOES 20
 #define MAXIMO_SEGUIDORES 20
-#include <iostream>
-using namespace std;
+
 class Perfil {
     public:
         // Adiciona um perfil como seguidor deste perfil.
@@ -11,7 +13,7 @@ class Perfil {
         // Recebe as publicacoes feitas por um Perfil seguido.
         bool receber(string texto);
         // Imprime o Perfil.
-        void imprimir ();
+        void imprimir();
         // Getters e setters
         string getNome();
         void setNome (string nome);
@@ -26,3 +28,5 @@ class Perfil {
         string publicacoesRecebidas[MAXIMO_PUBLICACOES];
         int quantidadeDePublicacoesRecebidas = 0;
 };
+
+#endif // PERFIL_H

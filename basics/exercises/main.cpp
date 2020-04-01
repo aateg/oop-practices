@@ -63,8 +63,8 @@ void Perfil::imprimir() {
 }
 
 bool Perfil::adicionarSeguidor(Perfil* seguidor){
-    if (this -> seguidor == NULL){
-        this -> seguidor = seguidor;
+    if (this->seguidor == NULL){
+        this->seguidor = seguidor;
         return true;
     }
     return false;
@@ -72,11 +72,11 @@ bool Perfil::adicionarSeguidor(Perfil* seguidor){
 
 bool Perfil::publicar(string texto){
     if (this->quantidadeDePublicacoesFeitas < MAXIMO_PUBLICACOES){
-        this -> publicacoesFeitas[quantidadeDePublicacoesFeitas] = texto;
+        this->publicacoesFeitas[quantidadeDePublicacoesFeitas] = texto;
         quantidadeDePublicacoesFeitas++;
         if (this ->seguidor != NULL){
-            //this -> seguidor -> receber(texto);
-            (*(*this).seguidor).receber(texto);
+            this->seguidor->receber(texto);
+            //(*(*this).seguidor).receber(texto);
         }
         return true;
     }
@@ -84,8 +84,8 @@ bool Perfil::publicar(string texto){
 }
 
 bool Perfil::receber(string texto){
-    if (this -> quantidadeDePublicacoesRecebidas < MAXIMO_PUBLICACOES){
-        this -> publicacoesRecebidas[quantidadeDePublicacoesRecebidas] = texto;
+    if (this->quantidadeDePublicacoesRecebidas < MAXIMO_PUBLICACOES){
+        this->publicacoesRecebidas[quantidadeDePublicacoesRecebidas] = texto;
         quantidadeDePublicacoesRecebidas++;
         return true;
     }
@@ -103,31 +103,31 @@ void imprimirRede (Perfil* p1, Perfil* p2) {
 int main() {
   cout << endl << " ===== Cria perfil de Antonio Silva" << endl;
   Perfil *antonio = new Perfil();
-  antonio -> nome = "Antonio Silva";
+  antonio->nome = "Antonio Silva";
 
   cout << " ===== Cria perfil da Ana Soares" << endl;
   Perfil *ana = new Perfil();
-  ana -> nome = "Ana Soares";
+  ana->nome = "Ana Soares";
 
   cout << " ===== Ana segue Antonio"<< endl;
-  antonio -> adicionarSeguidor(ana);
+  antonio->adicionarSeguidor(ana);
 
   cout << " ===== Ana publica Msg 1 de Ana"<< endl;
-  ana -> publicar("Msg 1 de Ana");
+  ana->publicar("Msg 1 de Ana");
 
   imprimirRede (ana, antonio);
 
   cout << " ===== Antonio publica Msg 1 de Antonio"<< endl;
 
-  antonio -> publicar("Msg 1 de Antonio");
+  antonio->publicar("Msg 1 de Antonio");
 
   imprimirRede(ana, antonio);
 
   cout << " ===== Antonio segue Ana"<< endl;
-  ana -> adicionarSeguidor(antonio);
+  ana->adicionarSeguidor(antonio);
 
   cout << " ===== Ana publica Msg 2 de Ana"<< endl;
-  ana -> publicar("Msg 2 de Ana");
+  ana->publicar("Msg 2 de Ana");
 
   // TIRE O COMENTARIO E IMPLEMENTE
   imprimirRede(ana, antonio);
