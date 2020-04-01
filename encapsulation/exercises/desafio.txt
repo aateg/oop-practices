@@ -1,0 +1,13 @@
+(i) Um elemento essencial numa rede social são as "curtidas". 
+Como você poderia implementar curtidas nessa rede?
+Quais seriam os atributos necessários?
+
+R: A classe Publicacao pode ter um atributo "quantidadeDeCurtidas" e 
+incrementá-la quando um perfil "curtir" a publicacao. É possível também
+que cada publicacao tenha um vetor de curtidas.
+
+(ii) Como poderia inicializar os valores dos objetos da classe perfil
+de modo mais eficiente? O que aconteceria se tivéssemos muitos outros
+atributos nesta classe?
+
+R: É possível usar um método para setar todos os outros de uma vez.
