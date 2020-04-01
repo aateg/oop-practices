@@ -1,0 +1,11 @@
+DESAFIO
+(i) Como se poderia representar as publicações de modo mais eficiente, 
+por exemplo permitindo associar ao texto seu autor e a data de publicação?
+
+R: Bastaria criar uma classe Publicação com atributos refereciando o autor e data de publicação.
+
+(ii) Como se poderia permitir que um Perfil tivesse mais de um seguidor?
+
+R: Neste exemplo, criamos um vetor de strings ao fazer: "string publicacoesFeitas[MAX_PUBLICACOES];".
+Do mesmo modo, poderiamos fazer "Perfil seguidores[MAX_SEGUIDORES];", porém seria necessário inicializá-los
+como NULL.
