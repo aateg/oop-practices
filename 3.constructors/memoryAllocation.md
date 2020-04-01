@@ -28,7 +28,14 @@ delete p;
 
 
 # Dúvidas
-- Então o comando heap já procura o espaço na memória (disponível) e realiza a alocação?
-- O que é heap?
-- Em c++ o int tbm é uma classe?
-- Não ficou claro pra mim a alocação dinâmica de vetores com o new, a ideia de alocar dinamicamente n eh criar vetores sem passar o tamanho deles?
+Q: Então o comando new já procura o espaço na memória (disponível) e realiza a alocação?
+R: sim é igual ao malloc (sizeof)
+
+Q: O que é heap?
+R: Área de memória gerenciada pelo programa
+
+Q: Em c++ o int tbm é uma classe?
+R: Não é classe, o new é o alocador e chama o cons
+
+Q: Não ficou claro pra mim a alocação dinâmica de vetores com o new, a ideia de alocar dinamicamente n eh criar vetores sem passar o tamanho deles?
+R: Quando n sabe em tempo de compilação quantas vezes vamos ter que usar aquele objeto, quando quer que ele exista fora do escopo

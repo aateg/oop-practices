@@ -1,0 +1,10 @@
+(i) O que acontece se o destrutor do Perfil destruir também as mensagens recebidas?
+Por que isso acontece?
+R: isso destruiria as mensagens dos usuários com perfil existente, pq elas apontam pro 
+mesmo lugar na memória.
+
+(ii) Como se poderia representar objetos da classe Perfil que tivessem características
+distintas, por exemplo, professor e aluno? 
+R: poderia existir um atributo para distinguir alunos de professores, ou alunos e 
+professores poderiam ter classes distintas, apesar de conter informações comuns como
+a de um perfil.

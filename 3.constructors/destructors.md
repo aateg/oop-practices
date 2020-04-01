@@ -35,3 +35,4 @@ delete r;
 # Dúvidas
 
 Como implementar o destrutor?
+R: tem que destruir os atributos do objeto.

@@ -46,3 +46,5 @@ Sensor *s2 = new Sensor(2, NULL); // or you can pass NULL
 # Duvidas
 O construtor precisa ser público? E se eu chamar o metodo construtor
 a partir de um objeto? ele é reconstruido?
+
+R: Na maioria dos casos o construtor é criado como público. Em alguns casos especiais existe algo chamado Singleton.
