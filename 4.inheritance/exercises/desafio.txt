@@ -1,0 +1,13 @@
+Ao imprimir a Rede no passo 10 eu esperaria as saidas:
+Sigla PCS3210 - Responsavel: Prof. Nelson
+Sigla PCS3211 - Responsavel: Prof. Nelson
+
+Porém, o que obtive foi:
+
+PERFIL: Algoritmos I
+Seguidor: Prof. Nelson ...
+...
+
+Isso aconteceu porque ele executou o método imprimir da classe pai. 
+Esse problema foi resolvido aplicando static cast para converter em
+Disciplina. 
